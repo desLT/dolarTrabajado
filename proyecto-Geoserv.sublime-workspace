@@ -1,0 +1,1472 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"csr",
+				"csrf_protect\t(imported, instance)"
+			],
+			[
+				"ens",
+				"ensure_csrf_cookie\t(imported, instance)"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"PO",
+				"POST"
+			],
+			[
+				"is_",
+				"is_ajax"
+			],
+			[
+				"post",
+				"POST"
+			],
+			[
+				"input",
+				"input\tinput - hidden"
+			],
+			[
+				"xh",
+				"xh\txh"
+			],
+			[
+				"Servicio",
+				"ServicioVirtual"
+			],
+			[
+				"Po",
+				"PositiveSmallIntegerField"
+			],
+			[
+				"model",
+				"models\t(imported, instance)"
+			],
+			[
+				"class",
+				"class\tNew Class"
+			],
+			[
+				"SmallI",
+				"PositiveSmallIntegerField"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"servi",
+				"servicio"
+			],
+			[
+				"Ser",
+				"ServicioVirtual"
+			],
+			[
+				"v",
+				"vacacionando"
+			],
+			[
+				"py",
+				"python"
+			],
+			[
+				"unq",
+				"unique_together"
+			],
+			[
+				"I",
+				"IDIOMAS_DISPONIBLES\t(global, instance)"
+			],
+			[
+				"URL",
+				"URL_CAT\t(local, instance)"
+			],
+			[
+				"Htt",
+				"HttpRespoonseRedirect"
+			],
+			[
+				"xdp",
+				"xdp\txdp"
+			],
+			[
+				"uniq",
+				"unique_together"
+			],
+			[
+				"meta",
+				"meta\tmeta-py"
+			],
+			[
+				"Tr",
+				"True\t(builtin, instance)"
+			],
+			[
+				"T",
+				"Tsubcats\t(local, instance)"
+			],
+			[
+				"cate",
+				"categoria"
+			],
+			[
+				"clas",
+				"classmethod\t(builtin, class)"
+			],
+			[
+				"uni",
+				"unique_together"
+			],
+			[
+				"xd",
+				"xdp\txdp"
+			],
+			[
+				"un",
+				"unique"
+			],
+			[
+				"idioma",
+				"idioma=\"es"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"ex",
+				"except\t(keyword, instance)"
+			],
+			[
+				"max",
+				"max_length=\t(parameter_keyword, instance)"
+			],
+			[
+				"pri",
+				"primary_key=\t(parameter_keyword, instance)"
+			],
+			[
+				"get",
+				"get_query_set()\t(attribute, function)"
+			],
+			[
+				"meta_",
+				"meta_ut"
+			],
+			[
+				"In",
+				"PositiveIntegerField\t(imported, class)"
+			],
+			[
+				"Servi",
+				"ServicioVirtual\t(global, class)"
+			],
+			[
+				"Serv",
+				"ServicioVirtual\t(global, class)"
+			],
+			[
+				"getElement",
+				"getElementsByName  (function)"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"form",
+				"form\t<form>"
+			],
+			[
+				"on",
+				"onchange\tAttr"
+			],
+			[
+				"table",
+				"table\t<table>"
+			],
+			[
+				"t",
+				"th\t<th>"
+			],
+			[
+				"ca",
+				"cancelada\t(local, instance)"
+			],
+			[
+				"x",
+				"x_comprar\t(local, instance)"
+			],
+			[
+				"lista_ser",
+				"lista_servis"
+			],
+			[
+				"con",
+				"cont_servis\t(local, instance)"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"counter",
+				"counter0"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"margin-",
+				"margin-left:   (property)"
+			],
+			[
+				"nombre",
+				"nombre_completo"
+			],
+			[
+				"re",
+				"request\t(local, instance)"
+			],
+			[
+				"cont",
+				"contrato\t(local, instance)"
+			],
+			[
+				"serv",
+				"ServicioSatelite\t(global, class)"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"lista",
+				"lista_subcat\t(local, instance)"
+			],
+			[
+				"lis",
+				"lista_categorias\t(local, instance)"
+			],
+			[
+				"lista_",
+				"lista_temp\t(local, instance)"
+			],
+			[
+				"cant",
+				"cant_compradores\t(local, instance)"
+			],
+			[
+				"tiempo",
+				"tiempo_entrega"
+			],
+			[
+				"can",
+				"cant_canceladas\t(local, instance)"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"B",
+				"BigIntegerField\t(imported, class)"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"a",
+				"abbr\t<abbr>"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"he",
+				"height\tAttr"
+			],
+			[
+				"bootstr",
+				"bootstrap.min.js"
+			],
+			[
+				"padi",
+				"padding-left"
+			],
+			[
+				"met",
+				"method\tAttr"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"au",
+				"auto_now_add"
+			],
+			[
+				"desc",
+				"desc_subcateg"
+			],
+			[
+				"mi",
+				"mimg\tImageField (mimg)"
+			],
+			[
+				"rea",
+				"regalos"
+			],
+			[
+				"tipo",
+				"tipo_puntaje"
+			],
+			[
+				"n",
+				"n_usr"
+			],
+			[
+				"lx",
+				"lxh\tlxh"
+			],
+			[
+				"V",
+				"Valoracion"
+			],
+			[
+				"His",
+				"HistorialMedallas"
+			],
+			[
+				"MES",
+				"MES_INICIO_CH"
+			],
+			[
+				"valor",
+				"valoracion"
+			],
+			[
+				"Pre",
+				"PremioMedalla"
+			],
+			[
+				"ser",
+				"servicio_v"
+			],
+			[
+				"crea",
+				"create"
+			],
+			[
+				"pr",
+				"precio-complemento"
+			],
+			[
+				"des",
+				"desc-complemento"
+			],
+			[
+				"nom",
+				"nomb-complemento"
+			],
+			[
+				"cat",
+				"categ_mas_busc"
+			],
+			[
+				"mda",
+				"mdatetime\tDateTimeField (mdatetime)"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"back",
+				"Background 4.png - Acceso directo.lnk"
+			],
+			[
+				"style",
+				"style\tTag"
+			],
+			[
+				"mp",
+				"mposint\tPositiveIntegerField (mposint)"
+			],
+			[
+				"m",
+				"msmallint\tSmallIntegerField (msmallint)"
+			],
+			[
+				"elimina",
+				"eliminado"
+			],
+			[
+				"md",
+				"mdatetime\tDateTimeField (mdatetime)"
+			],
+			[
+				"ms",
+				"mpossmallint\tPositiveSmallIntegerField (mpossmallint)"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"nive",
+				"nivel_usr"
+			],
+			[
+				"p_",
+				"p_usr_logueado"
+			],
+			[
+				"ptos",
+				"puntos"
+			],
+			[
+				"nivel",
+				"nivel_usr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\n1 New user visit our website\n2 we use geo-IP data to get position\n3 We show Google Map with user's position centered on the map (using IP)\n4 we ask for geolocation permission (if browser supports it)\n5 if the user accepts permission we center the map to the new location\n6 we query database for near places (using either browser geolocation), using either geoIP in case of (decline permission or lack of browser support) or location from geolocation\n\ncomo cobrar enlas redes sociales??\n\ndevelopers.mercadopago.com\n\n--------------------------NOOOOOOOO\n-hay 2 mentalidades q yo amo en vzla, una opositora q piensa q vzla es una porqueria q no sirve (sin darse cta q cuando dice vzla se refiere a sus ciudadanos icluyendose, vaya q filosofia/vision/autoestima si piensa q nunca va lograr nada en la vida) y la otra vision es la q espera q el gobierno resuelva pero igual no hace nada para aportar... no podemos ser inertes ante la realidad... ahora muxo cuidado yo no estoy mandando a la gente a q salga a la calle ni q desate su violencia, yo le q los invito a hacer lo q se nos repite en la tv... TODOs dicen q lo q le falta a vzla es produccion entonces xq revendemos\n\n---------------------------\n-modificar ipython\n\n----------------- Plantas concentracion\n\n-como se mantienen esas plantas? en la nevera?\n-cuanto tiempo duran?\n-venden las semillas?\n",
+			"settings":
+			{
+				"buffer_size": 1350,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"brow",
+				"Local History: Browse"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"key",
+				"FindKeyConflicts: All Key Maps to Quick Panel"
+			],
+			[
+				"fa",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"fav",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"html",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"open ",
+				"File: Open this file with an external application"
+			],
+			[
+				"open",
+				"File: Open this file with an external application"
+			],
+			[
+				"unico",
+				"Character Table: Lookup Unicode Character"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"local",
+				"Local History: Browse"
+			],
+			[
+				"comp",
+				"Local History: Compare"
+			],
+			[
+				"favo",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"allkey",
+				"FindKeyConflicts: All Key Maps to Quick Panel"
+			],
+			[
+				"todo",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"",
+				"Abacus: align selection"
+			],
+			[
+				"compa",
+				"Local History: Compare"
+			],
+			[
+				"compar",
+				"Local History: Compare"
+			],
+			[
+				"merg",
+				"Sublimerge"
+			],
+			[
+				"merge",
+				"Sublimerge"
+			],
+			[
+				"url",
+				"StringEncode: URL Decode"
+			],
+			[
+				"his",
+				"Local History: Open"
+			],
+			[
+				"hi",
+				"Local History: Open"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"hist",
+				"Local History: Open"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"histo",
+				"Local History: Browse"
+			],
+			[
+				"x",
+				"Snippet: xh-js"
+			],
+			[
+				"chec",
+				"Snippet: input - checkbox"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"enti",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"en",
+				"StringEncode: HTML Deentitize"
+			],
+			[
+				"enc",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"dj",
+				"Django: Sync Database"
+			],
+			[
+				"dja",
+				"Django: Run Server"
+			],
+			[
+				"djan",
+				"Django: Run Server"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"set",
+				"Set Syntax: To-Done"
+			],
+			[
+				"org",
+				"Preferences: orgmode Settings – Default"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"subl",
+				"SublimeLint: Next Error"
+			],
+			[
+				"ace",
+				"Snippet: a-acento"
+			],
+			[
+				"snippet",
+				"Snippet: coding: utf-8"
+			],
+			[
+				"runs",
+				"Django: Run Server"
+			],
+			[
+				"run",
+				"Django: Run Server"
+			],
+			[
+				"ope",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"server",
+				"Django: Run Server"
+			],
+			[
+				"she",
+				"Django: Shell"
+			],
+			[
+				"shel",
+				"Django: Shell"
+			],
+			[
+				"fava",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"syn",
+				"Django: Sync Database"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"keym",
+				"FindKeyConflicts: All Key Maps to Buffer"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"hel",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"sni",
+				"Snippet: CDATA"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Comment"
+			],
+			[
+				"set sy py",
+				"Set Syntax: Python Django"
+			],
+			[
+				"view",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"keyma",
+				"Keymap Redefiner: Remove Keymap"
+			],
+			[
+				"vi",
+				"View: Toggle Menu"
+			],
+			[
+				"to",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"too",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"refr",
+				"Project: Refresh Folders"
+			],
+			[
+				"reve",
+				"File: Revert"
+			],
+			[
+				"vie",
+				"View: Toggle Menu"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rot",
+				"Rot13 Selection"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"go",
+				"Goto Documentation"
+			],
+			[
+				"got",
+				"Goto Documentation"
+			],
+			[
+				"find",
+				"FindKeyConflicts: Command Search"
+			],
+			[
+				"re",
+				"File: Revert"
+			],
+			[
+				"rev",
+				"File: Revert"
+			],
+			[
+				"dif",
+				"FileDiffs: Menu"
+			],
+			[
+				"add",
+				"Favorite Files: Add File(s)"
+			],
+			[
+				"cl",
+				"Clipboard Manager: Paste"
+			],
+			[
+				"cli",
+				"Clipboard Manager: Show History"
+			],
+			[
+				"clip",
+				"Clipboard Manager: Show History"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: L",
+				"Package Control: List Packages"
+			],
+			[
+				"op",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"Package Control",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 544.0
+	},
+	"console":
+	{
+		"height": 191.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"2",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Users/iLaptop/xampp/htdocs/Django/clon-de-twitter-django-3.0/static/twitter/js/chat.js",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/Plantillas/base.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/Multimedia/js/try.js",
+		"/C/Users/iLaptop/xampp/htdocs/Django/django17/ajaxiando/ajaxiando/urls.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/clon-de-twitter-django-3.0/twitter/urls.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/django17/ajaxiando/plantilla/a.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/clon-de-twitter-django-3.0/twitter/views.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/django17/ajaxiando/vistahtml/views.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/django17/ajaxiando/ajaxiando/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/geoservicios/formularios.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/clon-de-twitter-django-3.0/templates/twitter/base.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/geoservicios/views.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/Plantillas/es/index.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/gserv/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/gserv/urls.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/geoservicios/models.py",
+		"/C/Users/iLaptop/xampp/htdocs/aguademar/js/script-crud-eventos.php",
+		"/C/Users/iLaptop/xampp/htdocs/aguademar/js/sesionar.js",
+		"/C/Users/iLaptop/Desktop/F/proys.org",
+		"/C/Users/iLaptop/Documents/Person/Course/PROYECTOS/sin proce.txt",
+		"/C/Users/iLaptop/Documents/Person/Course/PROYECTOS/VISION/DEF-fiver.todo",
+		"/C/Users/iLaptop/Documents/Person/Course/PROYECTOS/VISION/Horarios.txt",
+		"/C/Users/iLaptop/Documents/Person/Course/PROYECTOS/VISION/fiver -- vision.org",
+		"/C/Users/iLaptop/Desktop/F/TAREAs.txt",
+		"/C/Users/iLaptop/xampp/htdocs/Django/hv/hv/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/hv/hv/urls.py",
+		"/C/Users/iLaptop/AppData/Local/Temp/Rar$DI01.910/README.md",
+		"/C/Users/iLaptop/Documents/Person/Course/OTROS/my/Persuation/Argumentacion/Estrategia para el desarrollo de la habilidad argumentativa en los estudiantes del P.N.F.E. de la Misión Sucre (página 2) - Monografias.com_files/cookie.js",
+		"/C/Users/iLaptop/Documents/Person/Course/Python/Introducción a programar con python I - Taringa!_files/cookie.js",
+		"/C/Users/iLaptop/Downloads/Pagz checkar/Manual para la presentación y redacción del Proyecto Comunitario Sociolaboral (página 2) - Monografias.com_files/cookie.js",
+		"/C/Users/iLaptop/Downloads/Nueva carpeta (2)/[how-to] MAC and Xcode in Windows! _ iPad, iPhone, and iPod touch forums _ iFans_archivos/cookie.js",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/readme.md",
+		"/C/Users/iLaptop/xampp/htdocs/Django/django17/ajaxiando/static/a.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/app/animales/manage.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/app/manage.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/a.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/imaginable/static/a.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/imaginable/imaginable/urls.py",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/bootstrap.py",
+		"/C/Users/iLaptop/xampp/htdocs/aguademar/js/lang.js",
+		"/C/Users/iLaptop/xampp/htdocs/aguademar/js/script-crud-equipo.php",
+		"/C/Users/iLaptop/xampp/htdocs/aguademar/js/script-eventos.php",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/gserv/Multimedia/js/2015-01-08_04.17.44.try.js",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/gserv/Multimedia/js/2015-01-11_22.42.45.try.js",
+		"/C/Users/iLaptop/Desktop/carta-IMAGINABLE-abril-2015.txt",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/geoservicios/formulario.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/formularios.py",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/2015-01-01_22.12.32.models.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/pruebita/geoapl/models.py",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/2015-01-04_18.37.58.models.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/models.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/gserv/geoservicios/migrations/0001_initial.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/views.py",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/2015-01-02_00.22.47.views.py",
+		"/C/Users/iLaptop/.sublime/history/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/geoservicios/2015-01-04_19.53.29.views.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/urls.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/Plantillas/es/index.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/Multimedia/js/try.js",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/Plantillas/base.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/www.freedomsponsors.org-master/README.md",
+		"/C/Users/iLaptop/xampp/htdocs/Django/www.freedomsponsors.org-master/MaterialForBeginners.md",
+		"/C/Users/iLaptop/xampp/htdocs/Django/www.freedomsponsors.org-master/requirements-win.txt",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Code Preview/codepreview.py",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Code Preview/README.md",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Hhhhold.com Placeholder Image Tag Generator/Hhhhold.sublime-settings",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/package_control/package_disabler.py",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/Default.sublime-commands",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/Multimedia/css/mi.css",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/Plantillas/es/config.html",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/world/admin.py",
+		"/C/Users/iLaptop/Documents/Person/Course/PROYECTOS/VISION/temp.txt",
+		"/C/Users/iLaptop/xampp/htdocs/Django/mprendedores/del.bat",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/iLaptop/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/world/models.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/world/load.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/world/views.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/gdj/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/pruebita/pruebita/settings.py",
+		"/C/Users/iLaptop/xampp/htdocs/Django/d17/gdj/gdj/urls.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/base.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admindocs/templates/admin_doc/model_detail.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/auth/user/change_password.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/change_list.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/change_form.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/gis/templates/gis/admin/OpenLayers2.js",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/gis/templates/gis/admin/osm.js",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/gis/templates/gis/admin/openlayers.js",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/options.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/sites.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/helpers.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templatetags/admin_static.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templatetags/admin_urls.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/base_site.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/index.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/actions.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/prepopulated_fields_js.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/templates/admin/app_index.html",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/actions.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/apps.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/checks.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/decorators.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/util.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/utils.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/validation.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/widgets.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/admin/static/admin/js/admin/RelatedObjectLookups.js",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/templatetags/static.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/gis/geos/prototypes/io.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/gis/geos/prototypes/misc.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/template/loaders/app_directories.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/webdesign/templatetags/webdesign.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/webdesign/apps.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/templatetags/staticfiles.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/views.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/apps.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/finders.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/storage.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/urls.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/staticfiles/utils.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/sites/admin.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/sites/apps.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/sites/management.py",
+		"/C/Python27/Lib/site-packages/Django-1.7.1-py2.7.egg/django/contrib/sites/managers.py"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\mprendedores\\",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\mprendedores\\Plantillas\\es",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\mprendedores\\Plantillas",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\clon-de-twitter-django-3.0\\templates\\twitter",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\clon-de-twitter-django-3.0\\twitter",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\clon-de-twitter-django-3.0\\templates\\twitter",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa\\Plantillas",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa\\Plantillas",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa\\Plantillas",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django",
+			"<project>",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django",
+			"<project>",
+			"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\swetter django"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"’",
+			"text",
+			"’",
+			">>>",
+			" '",
+			"gserv",
+			"\n        break;",
+			"RequestContext",
+			"/*",
+			"*/",
+			" + \"",
+			": ' + ",
+			"output += '",
+			"()",
+			"a",
+			"recuperar_gs",
+			"inicio",
+			"getLocation",
+			"data",
+			"' '",
+			"var ",
+			"footer",
+			"hora",
+			"nvogs",
+			"get",
+			"GET",
+			"get",
+			"GET",
+			"POST",
+			"nvogs",
+			"container\ncontainer",
+			"container",
+			"mes=m, anio=a, ",
+			"LANGUAGE_CODE",
+			"rocks",
+			"loc",
+			"Loc",
+			"loc",
+			"lat",
+			"discur",
+			"discu",
+			"discur",
+			"soy",
+			"txtLat",
+			"txt",
+			"input",
+			"ajaxtw",
+			"name",
+			"txtlat",
+			"get",
+			"vendedor",
+			"Django v1.7",
+			"hasta Django",
+			"ordering",
+			"desde_mipunto",
+			"shops",
+			"current_point",
+			"discurs",
+			"1pto",
+			"Vzla",
+			"te conectas",
+			"fold",
+			"ctrl+k",
+			"SmallIntegerField",
+			"SmallI",
+			"_usuario",
+			"extrahead",
+			"OpenLayers.js",
+			"OpenLayers",
+			"OpenLayers.js",
+			"2.13/OpenLayers.js",
+			"api/2.13/OpenLayers.js",
+			"http://openlayers.org/api/2.13/OpenLayers.js",
+			"\"",
+			"pruebita",
+			"’",
+			"sqlite3",
+			"pw",
+			"pass",
+			"postgr",
+			"pg",
+			"root",
+			"postgres",
+			"post",
+			"pg",
+			"post",
+			"pg",
+			"root",
+			"_",
+			"anio=a)",
+			"Perfil.objects.filter",
+			"delete",
+			"Auth",
+			"auth",
+			"modelbac",
+			"modal",
+			"modal\n",
+			"%}\n",
+			"modal",
+			"revalidar",
+			"</label>",
+			"<label class=\"radio checkbox-inline\" style=\"margin:0\">",
+			"nombre",
+			"nombre_completo",
+			"dat",
+			"edad",
+			"mensaje",
+			"nombre",
+			"uerelizar",
+			"redirec",
+			"TraduccionCa",
+			"Traduccion",
+			"traduccion",
+			"Traduccion",
+			"traduccion",
+			"Traduccion",
+			")\n\n\tT",
+			", padre=c",
+			", idioma=\"es\"",
+			"c = Categoria.objects.crea",
+			"url=\"graficos-diseno-fotografia\")\n\tTraduccionCategoria.objects.create(",
+			")\n\tTraduccionCategoria.objects.create(",
+			"oma=\"es\", url=\"",
+			"oma=\"es\", url=\"graficos-diseno-fotografia\"",
+			"a.objects.create(nomb",
+			"padre=c,",
+			"cts.create(nombre=",
+			"padre=c, "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"=",
+			">\n<",
+			" ",
+			"/"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1169,
+								1169
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.486436812367,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.314016872996,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clipboard_manager":
+	{
+		"height": 242.0
+	},
+	"output.exec":
+	{
+		"height": 300.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.rope_python_documentation":
+	{
+		"height": 174.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 226.0
+	},
+	"pinned_build_system": "",
+	"project": "proyecto-Geoserv.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"demo\\cosas.td"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\iLaptop\\xampp\\htdocs\\Django\\MiEmpresa2\\MiEmpresa2\\Sociedades.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 139.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

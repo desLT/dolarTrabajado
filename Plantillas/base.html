@@ -1,0 +1,143 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		{% load static from staticfiles %}
+		<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+		{% comment %}<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" type="text/css">{% endcomment %}
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/mi.css' %}" rel="stylesheet" type="text/css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GeoServicios</title>
+	</head>
+	<body>
+		<div id="envoltorio">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top-mio" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle menu-opc" data-toggle="collapse" data-target="#m-principal">
+							<i class="glyphicon glyphicon-plus"></i>
+						</button>
+						<a class="navbar-brand navbar-brand-mio" title="Inicio" href="/"><i class="glyphicon glyphicon-home"></i><!-- <img src="images/logo.png" alt="logo" style="height: 30px;"> --></a>
+					</div>
+					<div class="collapse navbar-collapse" id="m-principal">
+						<form class="navbar-form navbar-left" role="search" action="/buscar" method="get">
+							<div class="form-group">
+								<input type="text" class="form-control form-controlado" id="search-query" placeholder="Buscar" name="consulta">
+							</div>
+							<button class="btn btn-default btn-mio glyphicon glyphicon-search" type="submit"></button>
+						</form>
+						<ul class="nav nav-mio navbar-nav navbar-nav-mio navbar-right">
+							{% if logueado %}
+								{% if perfil_propio %}
+									<li class="active"><a href="/perfil/{{ perfil.usuario }}/" title="Perf&iacute;l"><i class="glyphicon glyphicon-user"></i> <span class="menu-gr">Perf&iacute;l</span></a></li>
+								{% else %}
+									<li><a href="/perfil/{{ perfil_logueado.usuario }}/" title="Perf&iacute;l"><i class="glyphicon glyphicon-user"></i> <span class="menu-gr">Perf&iacute;l</span></a></li>
+								{% endif %}
+							{% endif %}
+							<li><a href="#" title="Mensajer&iacute;a"><i class="glyphicon glyphicon-comment"></i> <span class="menu-gr">Mensajer&iacute;a</span></a></li>
+							{% comment %}<li><a href="#" title="Noticias GS"><i class="glyphicon glyphicon-bell"></i> <span class="menu-gr">Noticias GS</span></a></li>{% endcomment %}
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" title="m&aacute;s..."><!-- <i class="glyphicon glyphicon-plus"></i>  --><i class="glyphicon glyphicon-chevron-down"></i> <span class="menu-gr">m&aacute;s...</span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/cuadroHonor/"><i class="glyphicon glyphicon-th"></i>Cuadro de Honor</a></li>
+									<li><a href="/blog/"><i class="glyphicon glyphicon-paperclip"></i>Blog / Gu&iacute;a</a></li>
+									<li><a href="/contacto/"><i class="glyphicon glyphicon-bullhorn"></i>Nosotros / Contactanos</a></li>
+									{% if logueado %}
+										<li><a href="/configuracion/"><i class="glyphicon glyphicon-cog"></i>Configuraci&oacute;n</a></li>
+										<li><a href="#" data-toggle="modal" data-target=".modal-sugerencia"><i class="glyphicon glyphicon-pushpin"></i>Sugerencias</a></li>
+										<li role="presentation" class="divider"></li>
+										<li><a href="/cierre-sesion/"><i class="glyphicon glyphicon-remove"></i>Cerrar Sesi&oacute;n</a></li>
+									{% endif %}
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Categor&iacute;as</a>
+								<ul class="dropdown-menu">
+									<li class=""><a href="/categoria/graficos-diseno-fotografia/">Gr&aacute;ficos, Dise&ntilde;o y Fotograf&iacute;a</a></li>
+									<li class=""><a href="/categoria/transcripcion-traduccion-redaccion/">Transcripci&oacute;n, Traducci&oacute;n y Redacci&oacute;n</a></li>
+									<li class=""><a href="/categoria/audio-musica/">Audio y M&uacute;sica</a></li>
+									<li class=""><a href="/categoria/programacion-tecnologia/">Programaci&oacute;n y Tecnolog&iacute;a</a></li>
+									<li class=""><a href="/categoria/marketing-digital/">Marketing Digital</a></li> <!-- mercadeo/mercadotecnia -->
+									<li class=""><a href="/categoria/publicidad-propaganda/">Publicidad y Propaganda</a></li>
+									<li class=""><a href="/categoria/negocios/">Negocios</a></li>
+									<li class=""><a href="/categoria/video-animacion/">Video y Animaci&oacute;n</a></li>
+									<li class=""><a href="/categoria/diversion-entretenimiento/">Diversi&oacute;n y Entretenimiento</a></li>
+									<li class=""><a href="/categoria/estilo-vida/">Estilo de vida</a></li>
+									<li class=""><a href="/categoria/regalos/">Regalos</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav><!--/nav-->
+			{% comment %}
+			<!-- xHACER:
+				# validar q datos salen por el meta
+			-->{{val}}{% endcomment %}
+			{% include pag_activa %}
+		</div>
+		<div class="footer">
+			<div class="container row">
+				<div class="col-md-4 rif pull-left">&copy; Geoservicios 2015</div>
+				{% comment %}<form action="/i18n/setlang/" method="post" class="col-md-4 form-inline pull-right" style="padding: 17px;">
+					<div class="form-group en-linea">
+						{% csrf_token %}
+						<input name="next" type="hidden" value="/" />
+						<select class="form-control form-controlado" name="language" style="height: 28px;">
+							{% get_language_info_list for  idiomas_disponibles as idiomas %}
+							{% for idioma in idiomas %}
+								<option value="{{ idioma.code }}"{% if idioma.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+									<i class="glyphicon glyphicon-globe"></i> {{ idioma.name_local|capfirst }} ({{ idioma.code }})
+								</option>
+							{% endfor %}
+						</select>
+					</div>
+					<div class="input-group en-linea">
+						<i class="glyphicon glyphicon-globe" style="vertical-align: text-top;margin-left: 5px;"></i>
+						<input class="btn btn-default btn-mio btn-mio-idioma" type="submit">
+					</div>
+					<a href="#" class="arriba col-md-4 form-inline pull-right" style="padding: 17px;"><i class="glyphicon glyphicon-chevron-up"></i></a>
+				</form>{% endcomment %}
+			</div>
+		</div>
+		<script>var url = "{% url 'busca-gs' %}";</script>
+		<script src="{% static 'js/jquery.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{%static 'js/try.js' %}" type="text/javascript" charset="utf-8" async defer>
+			/*window.onload = function() {
+				if (window.navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(setCoords);
+					alert("hay geo");
+				}
+				function setCoords(pos) {
+					document.getElementById("lat").value = pos.coordinates.latitude;
+					document.getElementById("lon").value = pos.coordinates.longitude;
+					alert(pos.coordinates.latitude+"");
+				}
+
+				$.ajax({
+					type: 'POST',
+					url: '/busca-gs/',
+					data: {
+						lat: document.getElementById("lat").value,
+						lon: document.getElementById("lon").value,
+						csrfmiddlewaretoken: '{% csrf_token %}',
+					},
+					dataType: 'json',
+					success: function(data) {
+				        alert(data);
+				    },
+				});
+			};*/
+			</script>
+		{% if logueado %}
+			{% include "es/modal-sugerencia.html" %}
+			{% if pag_activa == "es/config.html" %}
+				{% include "es/modal-confirmar.html" %}
+			{% endif %}
+		{% endif %}
+	</body>
+</html>

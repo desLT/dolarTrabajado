@@ -1,0 +1,21 @@
+<div class="modal fade modal-sugerencia" tabindex="-1" role="dialog" aria-labelledby="Sugerencias" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Sugerencias o Solicitar Informaci&oacute;n</h4>
+			</div>
+			<form action="/sugerencia/" method="post" accept-charset="utf-8">
+				{% csrf_token %}
+				<div class="modal-body">
+					<input type="text" class="form-control form-controlado" placeholder="Asunto" name="asunto">
+					<textarea class="form-control form-controlado" rows="5" name="txt" placeholder="Si consideras que a esta aplicaci&oacute;n le falta algo o conseguiste alg&uacute;n error, por favor h&aacute;zmelo saber. Ten en cuenta que esto fue hecho por una sola persona, as&iacute; que los posibles problemas, los intentare solucionar en la brevedad. Gracias! ..."></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

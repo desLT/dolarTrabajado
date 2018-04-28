@@ -1,0 +1,55 @@
+{% load i18n %}
+{% load static from staticfiles %}
+<script type="text/javascript" charset="utf-8">
+	function ir(pag) {
+		window.location = "http://localhost:8000"+pag.options[pag.selectedIndex].value;
+	}
+</script>
+<div class="cuerpo">
+	<div class="container">
+		{% if nomb_subcategoria %}<h4><a href="/categoria/{{ categoria.url }}/">{{ categoria }}</a>  ></h4>{% endif %}
+		<div class="titulo">
+			<h2 style="float: left;">
+				{% if nomb_subcategoria %}{{ nomb_subcategoria }}
+				{% else %}{{ categoria }}
+				{% endif %}
+			</h2>
+			<select class="subcategorias" onchange="ir(this)" name="subcats">
+				<option>
+					{% if nomb_subcategoria %}Others Subcategories:
+					{% else %}Subcategories:
+					{% endif %}
+				</option>
+				{% for sub in subcategorias %}
+				 	<option value="/categoria/{{ categoria.url }}/{{ sub.url }}/">{{ sub }}</option>
+				 {% endfor %}
+			</select>
+		</div>
+		<div class="row">
+			{% for gs in servicios %}
+				<div class="col-md-3 caja-serv">
+					<div class="cara-secundaria">
+						<p class="usuario"><a href="/perfil/{{ gs.vendedor }}/"><i class="glyphicon glyphicon-user"></i>  @{{ gs.vendedor }}</a></p>
+						<a class="enlace-serv" href="/categoria/{{ gs.subcategoria.padre.url }}/{{ gs.subcategoria.url }}/{{ gs.url }}/">
+							<p class="datos-extra">
+								<span class="titulo-extras">Average:</span><span><i class="glyphicon glyphicon-star color-oro"></i> +199k / +199k</span>
+								<span class="titulo-extras">Experiencie:</span><span><i class="glyphicon glyphicon-bookmark color-oro"></i> +99k</span>
+								<span class="vermas"><i class="glyphicon glyphicon-chevron-right" style=""></i></span>
+							</p>
+						</a>
+					</div>
+				 	<div class="cara-principal">
+						<img src="{% static 'images/profile.jpg' %}" width="215" height="130" alt="1.000 Me Gusta para tu post, foto o video en Facebook">
+				 		<!-- <img data-src="holder.js/300x200" alt="..."> -->
+					 	<div class="dir-serv">
+							<div class="row">
+								<h2 class="col-xs-9 nomb-serv">{{ gs.nombre }}</h2>
+								<div class="col-xs-3 text-center precio"><div>$</div>{{ gs.precio }}</div>
+							</div>
+				      		</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

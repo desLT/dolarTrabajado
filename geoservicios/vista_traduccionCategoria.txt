@@ -1,0 +1,501 @@
+def inicializar....
+	# c = Categoria.objects.create(url="graficos-diseno-fotografia")
+	# TraduccionCategoria.objects.create(nombre=u"Gráficos, Diseño y Fotografía", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Historietas, Caricaturas y Personajes", descripcion="", idioma="es", padre=c, url="historietas-caricaturas-personajes")
+	# TraduccionCategoria.objects.create(nombre=u"Diseño de Logos", descripcion="", idioma="es", padre=c, url="diseno-logos")
+	# TraduccionCategoria.objects.create(nombre=u"Ilustración", descripcion="", idioma="es", padre=c, url="ilustracion")
+	# TraduccionCategoria.objects.create(nombre=u"Portada de Libros y Paquetes", descripcion="", idioma="es", padre=c, url="portada-libros-paquetes")
+	# TraduccionCategoria.objects.create(nombre=u"Diseño Web e Interfaz de Usuario (IU)", descripcion="", idioma="es", padre=c, url="diseno-web-iu")
+	# TraduccionCategoria.objects.create(nombre=u"Fotografía y Edición Fotográfica", descripcion="", idioma="es", padre=c, url="fotografia-edicion-fotografica")
+	# TraduccionCategoria.objects.create(nombre=u"Diseño de Presentaciones", descripcion="", idioma="es", padre=c, url="diseno-presentaciones")
+	# TraduccionCategoria.objects.create(nombre=u"Tarjetas de Negocios", descripcion="", idioma="es", padre=c, url="tarjetas-negocios")
+	# TraduccionCategoria.objects.create(nombre=u"Encabezados y Anuncios", descripcion="", idioma="es", padre=c, url="encabezados-anuncios")
+	# TraduccionCategoria.objects.create(nombre=u"Arquitectura", descripcion="", idioma="es", padre=c, url="arquitectura")
+	# TraduccionCategoria.objects.create(nombre=u"Página Web Estática", descripcion="", idioma="es", padre=c, url="pagina-web-estatica")
+	# TraduccionCategoria.objects.create(nombre=u"Mobiliario", descripcion="", idioma="es", padre=c, url="mobiliario")
+	# TraduccionCategoria.objects.create(nombre=u"Videojuegos", descripcion="", idioma="es", padre=c, url="videojuegos")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="transcripcion-traduccion-redaccion")
+	# TraduccionCategoria.objects.create(nombre=u"Transcripción, Traducción y Redacción", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Redacción y Escritura Creativa", descripcion="", idioma="es", padre=c, url="redaccion-escritura-creativa")
+	# TraduccionCategoria.objects.create(nombre=u"Traducción", descripcion="", idioma="es", padre=c, url="traduccion")
+	# TraduccionCategoria.objects.create(nombre=u"Transcripción", descripcion="", idioma="es", padre=c, url="transcripcion")
+	# TraduccionCategoria.objects.create(nombre=u"Contenido para Sitios Web", descripcion="", idioma="es", padre=c, url="contenido-sitios-web")
+	# TraduccionCategoria.objects.create(nombre=u"Reseña/Crítica", descripcion="", idioma="es", padre=c, url="resena-critica")
+	# TraduccionCategoria.objects.create(nombre=u"Curriculum, Cartas de Presentación", descripcion="", idioma="es", padre=c, url="curriculum-cartas-presentacion")
+	# TraduccionCategoria.objects.create(nombre=u"Redacción de Discursos", descripcion="", idioma="es", padre=c, url="redaccion-discursos")
+	# TraduccionCategoria.objects.create(nombre=u"Edición y Revisión de Escritos", descripcion="", idioma="es", padre=c, url="edicion-revision-escritos")
+	# TraduccionCategoria.objects.create(nombre=u"Comunicado de Prensa", descripcion="", idioma="es", padre=c, url="comunicado-prensa")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="audio-musica")
+	# TraduccionCategoria.objects.create(nombre=u"Audio y Música", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Edición y Masterizadó de Audio", descripcion="", idioma="es", padre=c, url="edicion-masterizado-audio")
+	# TraduccionCategoria.objects.create(nombre=u"Canciones", descripcion="", idioma="es", padre=c, url="canciones")
+	# TraduccionCategoria.objects.create(nombre=u"Composición de canciones", descripcion="", idioma="es", padre=c, url="composicion-canciones")
+	# TraduccionCategoria.objects.create(nombre=u"Lecciones de Música", descripcion="", idioma="es", padre=c, url="lecciones-musica")
+	# TraduccionCategoria.objects.create(nombre=u"Música Rap", descripcion="", idioma="es", padre=c, url="musica-rap")
+	# TraduccionCategoria.objects.create(nombre=u"Narración y Edición Doblaje", descripcion="", idioma="es", padre=c, url="narracion-edicion-doblaje")
+	# TraduccionCategoria.objects.create(nombre=u"Efectos de sonido", descripcion="", idioma="es", padre=c, url="efectos-sonido")
+	# TraduccionCategoria.objects.create(nombre=u"Tonos de Llamada Personalizados", descripcion="", idioma="es", padre=c, url="tonos-llamada-personalizados")
+	# TraduccionCategoria.objects.create(nombre=u"Felicitaciones por Correo de Voz", descripcion="", idioma="es", padre=c, url="felicitaciones-correo-voz")
+	# TraduccionCategoria.objects.create(nombre=u"Canciones Personalizadas", descripcion="", idioma="es", padre=c, url="canciones-personalizadas")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="programacion-tecnologia")
+	# TraduccionCategoria.objects.create(nombre=u"Programación y Tecnología", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u".Net", descripcion="", idioma="es", padre=c, url=".net")
+	# TraduccionCategoria.objects.create(nombre=u"C/C++", descripcion="", idioma="es", padre=c, url="c-c++")
+	# TraduccionCategoria.objects.create(nombre=u"CSS y HTML", descripcion="", idioma="es", padre=c, url="css-html")
+	# TraduccionCategoria.objects.create(nombre=u"Joomla y Drupal", descripcion="", idioma="es", padre=c, url="joomla-drupal")
+	# TraduccionCategoria.objects.create(nombre=u"Base de Datos", descripcion="", idioma="es", padre=c, url="base-datos")
+	# TraduccionCategoria.objects.create(nombre=u"Java", descripcion="", idioma="es", padre=c, url="java")
+	# TraduccionCategoria.objects.create(nombre=u"JavaScript", descripcion="", idioma="es", padre=c, url="javascript")
+	# TraduccionCategoria.objects.create(nombre=u"PSD a HTML", descripcion="", idioma="es", padre=c, url="psd-html")
+	# TraduccionCategoria.objects.create(nombre=u"WordPress", descripcion="", idioma="es", padre=c, url="wordpress")
+	# TraduccionCategoria.objects.create(nombre=u"Flash", descripcion="", idioma="es", padre=c, url="flash")
+	# TraduccionCategoria.objects.create(nombre=u"iOS, Android y Móviles", descripcion="", idioma="es", padre=c, url="ios-android-moviles")
+	# TraduccionCategoria.objects.create(nombre=u"PHP", descripcion="", idioma="es", padre=c, url="php")
+	# TraduccionCategoria.objects.create(nombre=u"Preguntas y Respuestas (PR) y Pruebas de Software", descripcion="", idioma="es", padre=c, url="pr-pruebas-software")
+	# TraduccionCategoria.objects.create(nombre=u"Tecnología", descripcion="", idioma="es", padre=c, url="tecnologia")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="marketing-digital")
+	# TraduccionCategoria.objects.create(nombre=u"Marketing Digital", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Análisis Web", descripcion="", idioma="es", padre=c, url="analisis-web")
+	# TraduccionCategoria.objects.create(nombre=u"Artículos y Envíos de RP", descripcion="", idioma="es", padre=c, url="articulos-envios-rp")
+	# TraduccionCategoria.objects.create(nombre=u"Menciones en Blogs", descripcion="", idioma="es", padre=c, url="menciones-blogs")
+	# TraduccionCategoria.objects.create(nombre=u"Búsqueda de Dominios", descripcion="", idioma="es", padre=c, url="busqueda-dominios")
+	# TraduccionCategoria.objects.create(nombre=u"Páginas de Fans", descripcion="", idioma="es", padre=c, url="paginas-fans")
+	# TraduccionCategoria.objects.create(nombre=u"Optimización para Motores de Búsqueda (SEO)", descripcion="", idioma="es", padre=c, url="seo")
+	# TraduccionCategoria.objects.create(nombre=u"Marketing en Redes Sociales", descripcion="", idioma="es", padre=c, url="marketing-redes-sociales")
+	# TraduccionCategoria.objects.create(nombre=u"Generar Tráfico Web", descripcion="", idioma="es", padre=c, url="generar-trafico-web")
+	# TraduccionCategoria.objects.create(nombre=u"Marketing en Videos", descripcion="", idioma="es", padre=c, url="marketing-videos")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="publicidad-propaganda")
+	# TraduccionCategoria.objects.create(nombre=u"Publicidad y Propaganda", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Tu mensaje en/con...", descripcion="", idioma="es", padre=c, url="tu-mensaje-en-con")
+	# TraduccionCategoria.objects.create(nombre=u"Volantes, Folletos y Regalos", descripcion="", idioma="es", padre=c, url="volantes-folletos-regalos")
+	# TraduccionCategoria.objects.create(nombre=u"Anuncios Humanos", descripcion="", idioma="es", padre=c, url="anuncios-humanos")
+	# TraduccionCategoria.objects.create(nombre=u"Comerciales", descripcion="", idioma="es", padre=c, url="comerciales")
+	# TraduccionCategoria.objects.create(nombre=u"Mascotas Modelos", descripcion="", idioma="es", padre=c, url="mascotas-modelos")
+	# TraduccionCategoria.objects.create(nombre=u"Publicidad en Exteriores", descripcion="", idioma="es", padre=c, url="publicidad-exteriores")
+	# TraduccionCategoria.objects.create(nombre=u"Radio", descripcion="", idioma="es", padre=c, url="radio")
+	# TraduccionCategoria.objects.create(nombre=u"Promoción Musical", descripcion="", idioma="es", padre=c, url="promocion-musical")
+	# TraduccionCategoria.objects.create(nombre=u"Publicidad en Anuncios Web", descripcion="", idioma="es", padre=c, url="publicidad-anuncios-web")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="negocios")
+	# TraduccionCategoria.objects.create(nombre=u"Negocios", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Planes de Negocios", descripcion="", idioma="es", padre=c, url="planes-negocios")
+	# TraduccionCategoria.objects.create(nombre=u"Consejos para tu Carrera Profesional", descripcion="", idioma="es", padre=c, url="consejos-carrera-profesional")
+	# TraduccionCategoria.objects.create(nombre=u"Estudio de Mercado", descripcion="", idioma="es", padre=c, url="estudio-mercado")
+	# TraduccionCategoria.objects.create(nombre=u"Presentaciones", descripcion="", idioma="es", padre=c, url="presentaciones")
+	# TraduccionCategoria.objects.create(nombre=u"Asistentecia Virtual", descripcion="", idioma="es", padre=c, url="asistentecia-virtual")
+	# TraduccionCategoria.objects.create(nombre=u"Consejos para Negocios", descripcion="", idioma="es", padre=c, url="consejos-negocios")
+	# TraduccionCategoria.objects.create(nombre=u"Servicios de Marca", descripcion="", idioma="es", padre=c, url="servicios-marca")
+	# TraduccionCategoria.objects.create(nombre=u"Consultoría Financiera", descripcion="", idioma="es", padre=c, url="consultoria-financiera")
+	# TraduccionCategoria.objects.create(nombre=u"Consultoría Legal", descripcion="", idioma="es", padre=c, url="consultoria-legal")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="video-animacion")
+	# TraduccionCategoria.objects.create(nombre=u"Video y Animación", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Comerciales", descripcion="", idioma="es", padre=c, url="comerciales")
+	# # xPENSAR:
+	# 	# deberia cambiar el esquema (q un servicio elija las categorias)??
+	# 	# comerciales puede estar en video y en publicidad
+	# TraduccionCategoria.objects.create(nombre=u"Edición, Efectos y Post Producción", descripcion="", idioma="es", padre=c, url="edicion-efectos-post-produccion")
+	# TraduccionCategoria.objects.create(nombre=u"Animación y 3D", descripcion="", idioma="es", padre=c, url="animacion-3d")
+	# TraduccionCategoria.objects.create(nombre=u"Testimonios y Comentarios", descripcion="", idioma="es", padre=c, url="testimonios-comentarios")
+	# TraduccionCategoria.objects.create(nombre=u"Marionetas", descripcion="", idioma="es", padre=c, url="marionetas")
+	# TraduccionCategoria.objects.create(nombre=u"Stop Motion", descripcion="", idioma="es", padre=c, url="stop-motion")
+	# TraduccionCategoria.objects.create(nombre=u"Intros", descripcion="", idioma="es", padre=c, url="intros")
+	# TraduccionCategoria.objects.create(nombre=u"Storyboarding", descripcion="", idioma="es", padre=c, url="storyboarding")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="diversion-entretenimiento")
+	# TraduccionCategoria.objects.create(nombre=u"Diversión y Entretenimiento", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Video StandUp sobre Tema/Evento", descripcion="", idioma="es", padre=c, url="video-standup-sobre-tema-evento")
+	# TraduccionCategoria.objects.create(nombre=u"Chistes Escritos", descripcion="", idioma="es", padre=c, url="chistes-escritos")
+	# TraduccionCategoria.objects.create(nombre=u"Chistes en Vivo", descripcion="", idioma="es", padre=c, url="chistes-vivo")
+	# TraduccionCategoria.objects.create(nombre=u"Discurso Gracioso para Evento", descripcion="", idioma="es", padre=c, url="discurso-gracioso-evento")
+	# TraduccionCategoria.objects.create(nombre=u"Personificación de Celebridades", descripcion="", idioma="es", padre=c, url="personificacion-celebridades")
+	# TraduccionCategoria.objects.create(nombre=u"Truco de Magia y Predigitacion", descripcion="", idioma="es", padre=c, url="truco-magia-predigitacion")
+	# # xHACER:
+	# 	# q es esto mijo?
+	# TraduccionCategoria.objects.create(nombre=u"Humor Gr&aacute;fico", descripcion="", idioma="es", padre=c, url="humor-grafico")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="estilo-vida")
+	# TraduccionCategoria.objects.create(nombre=u"Estilo de vida", descripcion="", idioma="es", padre=c, url="estilo-vida")
+
+	# TraduccionCategoria.objects.create(nombre=u"Cuidado de Animales y Mascotas", descripcion="", idioma="es", padre=c, url="cuidado-animales-mascotas")
+	# TraduccionCategoria.objects.create(nombre=u"Consejos sobre Relaciones", descripcion="", idioma="es", padre=c, url="consejos-relaciones")
+	# TraduccionCategoria.objects.create(nombre=u"Maquillaje, Estilo y Belleza", descripcion="", idioma="es", padre=c, url="maquillaje-estilo-belleza")
+	# TraduccionCategoria.objects.create(nombre=u"Astrología y Tarot", descripcion="", idioma="es", padre=c, url="astrologia-tarot")
+	# TraduccionCategoria.objects.create(nombre=u"Recetas de Cocina", descripcion="", idioma="es", padre=c, url="recetas-cocina")
+	# TraduccionCategoria.objects.create(nombre=u"Consejos para Padres", descripcion="", idioma="es", padre=c, url="consejos-padres")
+	# TraduccionCategoria.objects.create(nombre=u"Viajes", descripcion="", idioma="es", padre=c, url="viajes")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+
+	# c = Categoria.objects.create(url="regalos")
+	# TraduccionCategoria.objects.create(nombre=u"Regalos", descripcion="", idioma="es")
+
+	# TraduccionCategoria.objects.create(nombre=u"Tarjetas de Felicitación", descripcion="", idioma="es", padre=c, url="tarjetas-felicitacion")
+	# TraduccionCategoria.objects.create(nombre=u"Video Felicitaciones", descripcion="", idioma="es", padre=c, url="video-felicitaciones")
+	# TraduccionCategoria.objects.create(nombre=u"Arte y Manualidades", descripcion="", idioma="es", padre=c, url="arte-manualidades")
+	# TraduccionCategoria.objects.create(nombre=u"Joyería Hecha a Mano", descripcion="", idioma="es", padre=c, url="joyeria-hecha-mano")
+	# TraduccionCategoria.objects.create(nombre=u"Regalos para Nerdos", descripcion="", idioma="es", padre=c, url="regalos-nerdos")
+	# TraduccionCategoria.objects.create(nombre=u"Otros", descripcion="", idioma="es", padre=c, url="otros")
+	# # termino
+
+	# Intento con listas:
+		# URL_CAT = [
+		# 	"graficos-diseno-fotografia",
+		# 	"transcripcion-traduccion-redaccion",
+		# 	"audio-musica",
+		# 	"programacion-tecnologia",
+		# 	"marketing-digital",
+		# 	"publicidad-propaganda",
+		# 	"negocios",
+		# 	"video-animacion",
+		# 	"diversion-entretenimiento",
+		# 	"estilo-vida",
+		# 	"regalos"
+		# ]
+		# URL_SUBCAT = [
+		# 	[
+		# 		"historietas-caricaturas-personajes",
+		# 		"diseno-logos",
+		# 		"ilustracion",
+		# 		"portada-libros-paquetes",
+		# 		"diseno-web-iu",
+		# 		"fotografia-edicion-fotografica",
+		# 		"diseno-presentaciones",
+		# 		"tarjetas-negocios",
+		# 		"encabezados-anuncios",
+		# 		"arquitectura",
+		# 		"pagina-web-estatica",
+		# 		"mobiliario",
+		# 		"videojuegos",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"redaccion-escritura-creativa",
+		# 		"traduccion",
+		# 		"transcripcion",
+		# 		"contenido-sitios-web",
+		# 		"resena-critica",
+		# 		"curriculum-cartas-presentacion",
+		# 		"redaccion-discursos",
+		# 		"edicion-revision-escritos",
+		# 		"comunicado-prensa",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"edicion-masterizado-audio",
+		# 		"canciones",
+		# 		"composicion-canciones",
+		# 		"lecciones-musica",
+		# 		"musica-rap",
+		# 		"narracion-edicion-doblaje",
+		# 		"efectos-sonido",
+		# 		"tonos-llamada-personalizados",
+		# 		"felicitaciones-correo-voz",
+		# 		"canciones-personalizadas",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		".net",
+		# 		"c-c++",
+		# 		"css-html",
+		# 		"joomla-drupal",
+		# 		"base-datos",
+		# 		"java",
+		# 		"javascript",
+		# 		"psd-html",
+		# 		"wordpress",
+		# 		"flash",
+		# 		"ios-android-moviles",
+		# 		"php",
+		# 		"pr-pruebas-software",
+		# 		"tecnologia",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"analisis-web",
+		# 		"articulos-envios-rp",
+		# 		"menciones-blogs",
+		# 		"busqueda-dominios",
+		# 		"paginas-fans",
+		# 		"seo",
+		# 		"marketing-redes-sociales",
+		# 		"generar-trafico-web",
+		# 		"marketing-videos",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"tu-mensaje-en-con",
+		# 		"volantes-folletos-regalos",
+		# 		"anuncios-humanos",
+		# 		"comerciales",
+		# 		"mascotas-modelos",
+		# 		"publicidad-exteriores",
+		# 		"radio",
+		# 		"promocion-musical",
+		# 		"publicidad-anuncios-web",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"planes-negocios",
+		# 		"consejos-carrera-profesional",
+		# 		"estudio-mercado",
+		# 		"presentaciones",
+		# 		"asistentecia-virtual",
+		# 		"consejos-negocios",
+		# 		"servicios-marca",
+		# 		"consultoria-financiera",
+		# 		"consultoria-legal",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"comerciales",
+		# 		"edicion-efectos-post-produccion",
+		# 		"animacion-3d",
+		# 		"testimonios-comentarios",
+		# 		"marionetas",
+		# 		"stop-motion",
+		# 		"intros",
+		# 		"storyboarding",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"video-standup-sobre-tema-evento",
+		# 		"chistes-escritos",
+		# 		"chistes-vivo",
+		# 		"discurso-gracioso-evento",
+		# 		"personificacion-celebridades",
+		# 		"truco-magia-predigitacion",
+		# 		"humor-grafico",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"cuidado-animales-mascotas",
+		# 		"consejos-relaciones",
+		# 		"maquillaje-estilo-belleza",
+		# 		"astrologia-tarot",
+		# 		"recetas-cocina",
+		# 		"consejos-padres",
+		# 		"viajes",
+		# 		"otros"
+		# 	],
+		# 	[
+		# 		"tarjetas-felicitacion",
+		# 		"video-felicitaciones",
+		# 		"arte-manualidades",
+		# 		"joyeria-hecha-mano",
+		# 		"regalos-nerdos",
+		# 		"otros"
+		# 	]
+		# ]
+
+		# NOMB_CAT = [
+		#  	["es",
+		#  		[
+	 # 				u"Gráficos, Diseño y Fotografía",
+	 # 				u"Transcripción, Traducción y Redacción",
+	 # 				u"Audio y Música",
+	 # 				u"Programación y Tecnología",
+	 # 				u"Marketing Digital",
+	 # 				u"Publicidad y Propaganda",
+	 # 				u"Negocios",
+	 # 				u"Video y Animación",
+	 # 				u"Diversión y Entretenimiento",
+	 # 				u"Estilo de vida",
+	 # 				u"Regalos"
+	 # 			],
+		#  	],
+		#  	["en", [ ] ]
+		# ]
+		# NOMB_SUBCAT = [
+		# 	["es",
+		# 		[
+		# 			[
+		# 				u"Historietas, Caricaturas y Personajes",
+		# 				u"Diseño de Logos",
+		# 				u"Ilustración",
+		# 				u"Portada de Libros y Paquetes",
+		# 				u"Diseño Web e Interfaz de Usuario (IU)",
+		# 				u"Fotografía y Edición Fotográfica",
+		# 				u"Diseño de Presentaciones",
+		# 				u"Tarjetas de Negocios",
+		# 				u"Encabezados y Anuncios",
+		# 				u"Arquitectura",
+		# 				u"Página Web Estática",
+		# 				u"Mobiliario",
+		# 				u"Videojuegos",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Redacción y Escritura Creativa",
+		# 				u"Traducción",
+		# 				u"Transcripción",
+		# 				u"Contenido para Sitios Web",
+		# 				u"Reseña/Crítica",
+		# 				u"Curriculum, Cartas de Presentación",
+		# 				u"Redacción de Discursos",
+		# 				u"Edición y Revisión de Escritos",
+		# 				u"Comunicado de Prensa",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Edición y Masterizadó de Audio",
+		# 				u"Canciones",
+		# 				u"Composición de canciones",
+		# 				u"Lecciones de Música",
+		# 				u"Música Rap",
+		# 				u"Narración y Edición Doblaje",
+		# 				u"Efectos de sonido",
+		# 				u"Tonos de Llamada Personalizados",
+		# 				u"Felicitaciones por Correo de Voz",
+		# 				u"Canciones Personalizadas",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u".Net",
+		# 				u"C/C++",
+		# 				u"CSS y HTML",
+		# 				u"Joomla y Drupal",
+		# 				u"Base de Datos",
+		# 				u"Java",
+		# 				u"JavaScript",
+		# 				u"PSD a HTML",
+		# 				u"WordPress",
+		# 				u"Flash",
+		# 				u"iOS, Android y Móviles",
+		# 				u"PHP",
+		# 				u"Preguntas y Respuestas (PR) y Pruebas de Software",
+		# 				u"Tecnología",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Análisis Web",
+		# 				u"Artículos y Envíos de RP",
+		# 				u"Menciones en Blogs",
+		# 				u"Búsqueda de Dominios",
+		# 				u"Páginas de Fans",
+		# 				u"Optimización para Motores de Búsqueda (SEO)",
+		# 				u"Marketing en Redes Sociales",
+		# 				u"Generar Tráfico Web",
+		# 				u"Marketing en Videos",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Tu mensaje en/con...",
+		# 				u"Volantes, Folletos y Regalos",
+		# 				u"Anuncios Humanos",
+		# 				u"Comerciales",
+		# 				u"Mascotas Modelos",
+		# 				u"Publicidad en Exteriores",
+		# 				u"Radio",
+		# 				u"Promoción Musical",
+		# 				u"Publicidad en Anuncios Web",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Planes de Negocios",
+		# 				u"Consejos para tu Carrera Profesional",
+		# 				u"Estudio de Mercado",
+		# 				u"Presentaciones",
+		# 				u"Asistentecia Virtual",
+		# 				u"Consejos para Negocios",
+		# 				u"Servicios de Marca",
+		# 				u"Consultoría Financiera",
+		# 				u"Consultoría Legal",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Comerciales",
+		# 				u"Edición, Efectos y Post Producción",
+		# 				u"Animación y 3D",
+		# 				u"Testimonios y Comentarios",
+		# 				u"Marionetas",
+		# 				u"Stop Motion",
+		# 				u"Intros",
+		# 				u"Storyboarding",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Video StandUp sobre Tema/Evento",
+		# 				u"Chistes Escritos",
+		# 				u"Chistes en Vivo",
+		# 				u"Discurso Gracioso para Evento",
+		# 				u"Personificación de Celebridades",
+		# 				u"Truco de Magia Predigitacion",
+		# 				u"Humor Gráfico",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Cuidado de Animales y Mascotas",
+		# 				u"Consejos sobre Relaciones",
+		# 				u"Maquillaje, Estilo y Belleza",
+		# 				u"Astrología y Tarot",
+		# 				u"Recetas de Cocina",
+		# 				u"Consejos para Padres",
+		# 				u"Viajes",
+		# 				u"Otros"
+		# 			],
+		# 			[
+		# 				u"Tarjetas de Felicitación",
+		# 				u"Video Felicitaciones",
+		# 				u"Arte y Manualidades",
+		# 				u"Joyería Hecha a Mano",
+		# 				u"Regalos para Nerdos",
+		# 				u"Otros"
+		# 			]
+		# 		],
+		# 	],
+		# 	["en", [ ]]
+		# ]
+
+		# lcats = len(URL_CAT)-1
+		# for idi_n in range(len(IDIOMAS_DISPONIBLES)):
+		# 	for uc in URL_CAT:
+		# 		for nc in NOMB_CAT[idi_n][1]:
+		# 			c = Categoria.objects.create(url=uc)
+		# 			TraduccionCategoria.objects.create(nombre=nc, descripcion="", idioma=NOMB_CAT[idi_n][0], url=uc)
+		# 			for u_subc in URL_SUBCAT[lcats]:
+		# 				for n_subc in NOMB_SUBCAT[idi_n][1][lcats]:
+		# 					TraduccionCategoria.objects.create(nombre=n_subc, descripcion="", idioma=NOMB_SUBCAT[idi_n][0], padre=c, url=u_subc)
+		# 					lcats -= 1

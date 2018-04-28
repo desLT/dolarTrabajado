@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+	<script type="text/javascript" charset="utf-8">
+		function agregarInput(){
+			var n = document.getElementById("formu-serv").getElementsByTagName("input").length+1;
+			var i = document.createElement("input");
+			var s = document.createElement("span");
+			/*document.getElementById("formu-serv").children.length-3;*/
+			var f = document.getElementById("btn-inputs");
+			var m = document.getElementById("Nclausulas");
+			m.value = n-1;
+			if (s.innerText)
+				{s.innerText = n+".-"}
+			else
+				{s.textContent = n+".-"}
+			s.className = "col-md-1";
+			i.type = "text";
+			i.name = "clausula-" + (n -1);
+			i.className = "clausulas form-controlado col-md-11";
+			document.getElementById("formu-serv").insertBefore(s, f);
+			document.getElementById("formu-serv").insertBefore(i, f);
+			/*n+".-"+document.getElementById("Nclausulas").previousElementSibling.outerHTML;*/
+		}
+	</script>
+	<div class="cuerpo">
+		<div class="container">
+			<h4><a href="/categoria/{{ categoria.url }}/">{{ categoria }}</a>  >  <a href="/categoria/{{ categoria.url }}/{{ servicio.subcategoria.url }}/">{{ servicio.subcategoria }}</a></h4>
+			<h2>{{ servicio }}</h2>
+			<div class="row">
+				<div class="col-md-3 foto-serv">
+					<p class="usuario"><a href="/perfil/{{ servicio.vendedor }}/"><i class="glyphicon glyphicon-user"></i>  @{{ servicio.vendedor }}</a></p>
+					<img src="{{ STATIC_URL }}images/profile.jpg" width="100%" height="200px" alt="1.000 Me Gusta para tu post, foto o video en Facebook">
+				 	<!-- <img data-src="holder.js/300x200" alt="..."> -->
+				</div>
+				<div class="col-md-8 col-md-offset-1 descrip-serv">
+					<form action="/lista-espera/" method="post" accept-charset="utf-8">
+						<p style="font-size: 17px;font-family: 'Palatino Linotype';padding: 10px;"><i><b>Descripci&oacute;n: </b></i>{{ servicio.descripcion }}</p>
+						<div class="row" style="border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;">
+							<div class="col-md-6 contrato">
+								<p class="subtitulo">Contrato</p>
+								<div class="clausulas-contrato">
+									{% for n in contrato %}
+										<p class="clausula"><b>{{ forloop.counter }}.-</b> {{ n }}</p>
+									{% endfor %}
+								</div>
+								<a href="#" data-toggle="modal" data-target=".modal-crearcontrato" class="btn activar-chat pull-right">¿Negociar t&eacute;rminos?</a>
+							</div>
+							<div class="col-md-6 extras">
+								<p class="subtitulo">Extras</p>
+								<div class="clausulas-contrato">
+									{% for n in servs_satelite %}
+										<p><input type="checkbox" name="{{ n.id }}"> {{ n.descripcion }} <span class="pull-right">{{ n.precio }}</span></p>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								¿Acepta los terminos del contrato?
+							</div>
+							<div class="col-md-3">
+								<p id="precio-contrato"><b>Precio:</b><br>{{ servicio.precio }} Bs</p>
+							</div>
+							<div class="col-md-3">
+								<button type="submit" class="btn-contratar">Contratar</button>
+							</div>
+						</div>
+					</form>
+			      	</div>
+			</div>
+			<br>
+			<h2>Barra Estad&iacute;stica (Promedios)</h2>
+			<div class="row">
+				<div class="col-md-3 caja-estadistica-serv">
+					<p class="titulo-caja-estadistica">Experiencia</p><br>
+					<p>{% if exp %}{{ exp }}{% else %}0{% endif %}</p>
+				</div>
+				<div class="col-md-3 caja-estadistica-serv">
+					<p class="titulo-caja-estadistica">Tiempo de Entrega</p><br>
+					<p>{% if te %}{{ te }}{% else %}0{% endif %} / 10 ptos.</p>
+				</div>
+				<div class="col-md-3 caja-estadistica-serv">
+					<p class="titulo-caja-estadistica">Calidad del Servicio</p><br>
+					<p>{% if calidad %}{{ calidad }}{% else %}0{% endif %} / 10 ptos.</p>
+				</div>
+				<div class="col-md-3 caja-estadistica-serv">
+					<p class="titulo-caja-estadistica">Atenci&oacute;n con los Usuario</p><br>
+					<p>{% if atencion %}{{ atencion }}{% else %}0{% endif %} / 10 ptos.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% if logueado %}
+		<div class="modal fade modal-crearcontrato" tabindex="-4" role="dialog" aria-labelledby="CrearContrato" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Sugerir nuevo contrato</h4>
+					</div>
+					<form action="/enlistar-usuario/{{ perfil }}/" method="post" accept-charset="utf-8">
+						{% csrf_token %}
+						<div class="modal-body row">
+							<p id="formu-serv">
+								<b>Clausulas del Contrato:</b><br>
+								<span class="col-md-1">1.-</span>
+								<input type="text" name="clausula-0" class="clausulas form-controlado col-md-11">
+								<a href="#" id="btn-inputs" onclick="agregarInput()" class="btn btn-default">+</a>
+							</p>
+							<input type="hidden" id="Nclausulas" name="Nclausulas" value="0">
+							<input type="hidden" name="serv" value="{{ servicio.url }}">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							<button type="submit" class="btn btn-primary">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+	<div class="footer"  style="position: relative; margin-top: 50px;">
+{% endblock  %}

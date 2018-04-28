@@ -1,0 +1,145 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="{{ STATIC_URL }}css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="{{ STATIC_URL }}css/mi.css" rel="stylesheet" type="text/css">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
+		<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<title>GeoServicios</title>
+	</head>
+	<body>
+		<div id="envoltorio">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top-mio" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle menu-opc" data-toggle="collapse" data-target="#m-principal">
+							<i class="glyphicon glyphicon-plus"></i>
+						</button>
+						<a class="navbar-brand navbar-brand-mio" title="Inicio" href="/"><i class="glyphicon glyphicon-home"></i><!-- <img src="images/logo.png" alt="logo" style="height: 30px;"> --></a>
+					</div>
+					<div class="collapse navbar-collapse" id="m-principal">
+						<form class="navbar-form navbar-left" role="search" action="/buscar" method="get">
+							
+							<div class="form-group">
+								<input type="text" class="form-control form-controlado" id="search-query" placeholder="Buscar" name="c">
+							</div>
+							<button class="btn btn-default btn-mio glyphicon glyphicon-search" type="submit"></button>
+						</form>
+						<ul class="nav nav-mio navbar-nav navbar-nav-mio navbar-right">
+							{% if logueado %}
+								{% if perfil_propio %}
+									<li class="active"><a href="/perfil/{{ perfil.usuario }}/" title="Perf&iacute;l"><i class="glyphicon glyphicon-user"></i> <span class="menu-gr">Perf&iacute;l</span></a></li>
+								{% else %}
+									<li><a href="/perfil/{{ perfil_logueado.usuario }}/" title="Perf&iacute;l"><i class="glyphicon glyphicon-user"></i> <span class="menu-gr">Perf&iacute;l</span></a></li>
+								{% endif %}
+							{% endif %}
+							<li><a href="#" title="Mensajer&iacute;a"><i class="glyphicon glyphicon-comment"></i> <span class="menu-gr">Mensajer&iacute;a</span></a></li>
+							{% comment %}<li><a href="#" title="Noticias GS"><i class="glyphicon glyphicon-bell"></i> <span class="menu-gr">Noticias GS</span></a></li>{% endcomment %}
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" title="m&aacute;s..."><!-- <i class="glyphicon glyphicon-plus"></i>  --><i class="glyphicon glyphicon-chevron-down"></i> <span class="menu-gr">m&aacute;s...</span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/cuadroHonor/"><i class="glyphicon glyphicon-th"></i>Cuadro de Honor</a></li>
+									<li><a href="{{ STATIC_URL }}"><i class="glyphicon glyphicon-paperclip"></i>Blog / Gu&iacute;a</a></li>
+									<li><a href="/contacto/"><i class="glyphicon glyphicon-bullhorn"></i>Nosotros / Contactanos</a></li>
+									{% if logueado %}
+										<li><a href="/configuracion/"><i class="glyphicon glyphicon-cog"></i>Configuraci&oacute;n</a></li>
+										<li><a href="#" data-toggle="modal" data-target=".modal-sugerencia"><i class="glyphicon glyphicon-pushpin"></i>Sugerencias</a></li>
+										<li role="presentation" class="divider"></li>
+										<li><a href="/cierre-sesion/"><i class="glyphicon glyphicon-remove"></i>Cerrar Sesi&oacute;n</a></li>
+									{% endif %}
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-th-list"></i> Categor&iacute;as</a>
+								<ul class="dropdown-menu">
+									<li class=""><a href="/categoria/graficos-diseno-fotografia/">Gr&aacute;ficos, Dise&ntilde;o y Fotograf&iacute;a</a></li>
+									<li class=""><a href="/categoria/transcripcion-traduccion-redaccion/">Transcripci&oacute;n, Traducci&oacute;n y Redacci&oacute;n</a></li>
+									<li class=""><a href="/categoria/audio-musica/">Audio y M&uacute;sica</a></li>
+									<li class=""><a href="/categoria/programacion-tecnologia/">Programaci&oacute;n y Tecnolog&iacute;a</a></li>
+									<li class=""><a href="/categoria/marketing-digital/">Marketing Digital</a></li> <!-- mercadeo/mercadotecnia -->
+									<li class=""><a href="/categoria/publicidad-propaganda/">Publicidad y Propaganda</a></li>
+									<li class=""><a href="/categoria/negocios/">Negocios</a></li>
+									<li class=""><a href="/categoria/video-animacion/">Video y Animaci&oacute;n</a></li>
+									<li class=""><a href="/categoria/diversion-entretenimiento/">Diversi&oacute;n y Entretenimiento</a></li>
+									<li class=""><a href="/categoria/estilo-vida/">Estilo de vida</a></li>
+									<li class=""><a href="/categoria/regalos/">Regalos</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav><!--/nav-->
+			{% if mensaje %}
+				<div class="alert alert-warning fade in" style="text-align: center">
+					<i><b>Noticias GS:</b></i> {{ mensaje }}<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+				</div>
+			{% endif %}
+			{% block cuerpo %}{% endblock cuerpo %}
+			<!-- div del footer -->
+				<div class="container row">
+					<div class="col-md-4 rif pull-left">&copy; Geoservicios 2014 RIF: J-738420</div>
+					<div class="col-md-3 col-md-offset-5 pull-right" style="padding: 20px;">
+
+
+
+						<form action="{% url ’set_language’ %}" method="post">
+							{% csrf_token %}
+							<input name="next" type="hidden" value="{{ redirect_to }}" />
+							<select name="language">
+								{% get_language_info_list for LANGUAGES as languages %}
+								{% for language in languages %}
+									<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+										<i class="glyphicon glyphicon-globe"></i> {{ language.name_local }} ({{ language.code }})
+									</option>
+								{% endfor %}
+							</select>
+							<input type="submit" value="Go" />
+						</form>
+
+
+
+						<a href="#" class="arriba"><i class="glyphicon glyphicon-chevron-up"></i> Subir</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="{{ STATIC_URL }}js/jquery.js"></script>
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+		{% if logueado %}
+			<div class="modal fade modal-sugerencia" tabindex="-1" role="dialog" aria-labelledby="Sugerencias" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Sugerencias o Solicitar Informaci&oacute;n</h4>
+						</div>
+						<form action="/sugerencia/" method="post" accept-charset="utf-8">
+							{% csrf_token %}
+							<div class="modal-body">
+								<input type="text" class="form-control form-controlado" placeholder="Asunto" name="asunto">
+								<textarea class="form-control form-controlado" rows="5" name="txt" placeholder="Si consideras que a esta aplicaci&oacute;n le falta algo o conseguiste alg&uacute;n error, por favor h&aacute;zmelo saber. (Ten en cuenta que esto fue hecho por una sola persona, as&iacute; que los posibles problemas, los intentare solucionar en la brevedad) Gracias! ..."></textarea>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+								<button type="submit" class="btn btn-primary">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</body>
+</html>

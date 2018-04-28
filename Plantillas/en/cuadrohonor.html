@@ -1,0 +1,86 @@
+{% load i18n %}
+{% load static from staticfiles %}
+<div class="cuerpo">
+	<div class="container">
+		<div class="row margen-calificacion">
+			<p class="titulo-calificacion titulo"><span class="sombra-titulo"><i class="glyphicon glyphicon-star color-oro"></i>Average</span></p>
+			{% for lista in lista_promedio %}
+				<div class="caja-calificado">
+					<div class="row">
+						<a href="/perfil/{{ lista.1 }}/" style="display: block; margin: 0 auto;text-align: center;">
+					 		<p class="calificado-superior">
+					 			<span class="numeracion1">1</span>
+					 			<span class="puntuacion">{{ lista.0 }}</span>
+					 		</p>
+							<p class="calificado-inferior"><i class="glyphicon glyphicon-user"></i>  @{{ lista.1 }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="row margen-calificacion">
+			<p class="titulo-calificacion titulo"><span class="sombra-titulo"><i class="glyphicon glyphicon-star color-oro"></i>Atention</span></p>
+			{% for lista in lista_atencion %}
+				<div class="caja-calificado">
+					<div class="row">
+						<a href="/perfil/{{ lista.1 }}/" style="display: block; margin: 0 auto;text-align: center;">
+					 		<p class="calificado-superior">
+					 			<span class="numeracion1">1</span>
+					 			<span class="puntuacion">{{ lista.0 }}</span>
+					 		</p>
+							<p class="calificado-inferior"><i class="glyphicon glyphicon-user"></i>  @{{ lista.1 }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="row margen-calificacion">
+			<p class="titulo-calificacion titulo"><span class="sombra-titulo"><i class="glyphicon glyphicon-star color-oro"></i>Time</span></p>
+			{% for lista in lista_tiempo_entrega %}
+				<div class="caja-calificado">
+					<div class="row">
+						<a href="/perfil/{{ lista.1 }}/" style="display: block; margin: 0 auto;text-align: center;">
+					 		<p class="calificado-superior">
+					 			<span class="numeracion1">1</span>
+					 			<span class="puntuacion">{{ lista.0 }}</span>
+					 		</p>
+							<p class="calificado-inferior"><i class="glyphicon glyphicon-user"></i>  @{{ lista.1 }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="row margen-calificacion">
+			<p class="titulo-calificacion titulo"><span class="sombra-titulo"><i class="glyphicon glyphicon-star color-oro"></i>Quality</span></p>
+			{% for lista in lista_calidad %}
+				<div class="caja-calificado">
+					<div class="row">
+						<a href="/perfil/{{ lista.1 }}/" style="display: block; margin: 0 auto;text-align: center;">
+					 		<p class="calificado-superior">
+					 			<span class="numeracion1">1</span>
+					 			<span class="puntuacion">{{ lista.0 }}</span>
+					 		</p>
+							<p class="calificado-inferior"><i class="glyphicon glyphicon-user"></i>  @{{ lista.1 }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="row margen-calificacion">
+			<p class="titulo-calificacion titulo"><span class="sombra-titulo"><i class="glyphicon glyphicon-star color-oro"></i>Experience</span></p>
+			{% for lista in lista_experiencia %}
+				<div class="caja-calificado">
+					<div class="row">
+						<a href="/perfil/{{ lista.1 }}/" style="display: block; margin: 0 auto;text-align: center;">
+					 		<p class="calificado-superior">
+					 			<span class="numeracion1">1</span>
+					 			<span class="puntuacion">{{ lista.0 }}</span>
+					 		</p>
+							<p class="calificado-inferior"><i class="glyphicon glyphicon-user"></i>  @{{ lista.1 }}</p>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div><br><br>

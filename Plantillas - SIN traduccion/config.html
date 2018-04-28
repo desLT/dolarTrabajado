@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+	<div class="cuerpo" style="margin-bottom: 50px;">
+		<div class="container">
+			<div class="row">
+				<div style="margin: 0 0 40px;border: 1px solid #DDD;padding: 0;background-color: #fff;">
+					<div class="titulo-categoria" style="background: #F7E296;color:#000">Datos <button type="button" class="btn btn-default btn-sm pull-right btn-borrar-cuenta"><b>&times; Borrar Cuenta</b></button></div>
+					<form action="/configuracion/" method="post" accept-charset="utf-8">
+						{% csrf_token %}
+						<ul class="row categoria">
+							<div class="col-md-6">
+								<li><img src="{{ STATIC_URL }}images/falta.png" width="100px" height="90px" class="imag-perfil media-object"></li>
+								<li class="form-group" style="margin:0">
+									<label for="exampleInputFile">Cambiar Foto</label>
+									{% comment %}<input type="file" class="btn btn-default btn-sm btn-block" id="exampleInputFile">{% endcomment %}
+									<!-- <p class="help-block">Example block-level help text here.</p> -->
+								</li>
+							</div>
+							<div class="col-md-6">
+								<li><b>Usuario:</b> @{{ perfil }}</li>
+								<li>
+									{% if nombre_completo %}
+										<b>Nombre y Apellido:</b> {{ nombre_completo }}
+									{% else %}
+										<input class="form-control input-sm caja-txt-form caja-txt-cfg" name="nombre" type="text" placeholder="Nombre Completo">
+									{% endif %}
+								</li><br>
+								<li>¿Deseas tomarte unas vacaciones?<br>
+									<p style="text-align: center;">
+										{% if vacas %}
+											<label class="radio checkbox-inline" style="margin:0"><input type="radio" name="vacas" value="True" checked>Si</label>
+											<label class="radio checkbox-inline"><input type="radio" name="vacas" value="False">No</label>
+										{% else %}
+											<label class="radio checkbox-inline" style="margin:0"><input type="radio" name="vacas" value="True">Si</label>
+											<label class="radio checkbox-inline"><input type="radio" name="vacas" value="False" checked>No</label>
+										{% endif %}
+									</p>
+								</li>
+							</div>
+						</ul>
+						<ul class="row categoria">
+							<li class="separador"></li>
+							<div class="col-md-6">
+								<li><b>Ubicacion:</b><br>
+									<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">pais
+										<option>Pa&iacute;s</option>
+										<option>2</option>
+									</select>
+									<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">edo
+										<option>Estado</option>
+										<option>2</option>
+									</select>
+									<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">
+										<option>Ciudad</option>
+										<option>2</option>
+									</select>
+								</li><br>
+								<li><b>Edad:</b><input name="edad" class="form-control input-sm caja-txt-form caja-txt-cfg" type="text" placeholder="Edad" value="{{ edad }}"></li>
+								{% comment %}<li><input name="ci" class="form-control input-sm caja-txt-form caja-txt-cfg" type="text" placeholder="CI/Rif/Pasaporte"></li>{% endcomment %}
+							</div>
+							<div class="col-md-6">
+								<li><a href="#">DEBO ALMACENAR DATOS DE PAYPAL??</a></li>
+								<li><textarea name="" class="form-control form-controlado" rows="3" placeholder="Autorespuesta ante un saludo en la mensajer&iacute;a"></textarea></li>
+								<li><textarea name="" class="form-control form-controlado" rows="3" placeholder="Horario en que puedo chatear..."></textarea></li>
+								<li><button type="submit" class="btn btn-default btn-sm form-guardar pull-right">Guardar</button></li>
+							</div>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"  style="position: fixed;bottom: 0;">
+{% endblock cuerpo %}

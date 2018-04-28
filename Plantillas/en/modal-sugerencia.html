@@ -1,0 +1,21 @@
+<div class="modal fade modal-sugerencia" tabindex="-1" role="dialog" aria-labelledby="Suggestions" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Suggest or Ask for Information</h4>
+			</div>
+			<form action="/sugerencia/" method="post" accept-charset="utf-8">
+				{% csrf_token %}
+				<div class="modal-body">
+					<input type="text" class="form-control form-controlado" placeholder="Asunto" name="asunto">
+					<textarea class="form-control form-controlado" rows="5" name="txt" placeholder="If you think this app is missing something or it has any error bug, please let me now. Keep in mind that this was done by one guy, so any possible mistake I do will try to fix them immediatly. Thank you!..."></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

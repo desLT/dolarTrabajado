@@ -1,0 +1,71 @@
+{% load i18n %}
+{% load static from staticfiles %}
+{% if mensaje %}
+	<div class="alert alert-warning fade in" style="text-align: center">
+		<i><b>Noticias GS:</b></i> {{ mensaje }}<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	</div>
+{% endif %}
+<div class="cuerpo" style="margin-bottom: 50px;">
+	<div class="container">
+		<div class="row">
+			<div style="margin: 0 0 40px;border: 1px solid #DDD;padding: 0;background-color: #fff;">
+				<div class="titulo-categoria" style="background: #F7E296;color:#000">Datos 
+					<a href="#" data-toggle="modal" data-target=".modal-confirmar" class="btn btn-default btn-sm pull-right btn-borrar-cuenta">&times; Borrar Cuenta</a>
+				</div>
+				<form action="/configuracion/" method="post" accept-charset="utf-8">
+					{% csrf_token %}
+					<ul class="row categoria">
+						<div class="col-md-6">
+							<li><img src="{% static 'images/falta.png' %}" width="100px" height="90px" class="imag-perfil media-object"></li>
+							<li class="form-group" style="margin:0">
+								<label for="exampleInputFile">Cambiar Foto</label>
+								{% comment %}<input type="file" class="btn btn-default btn-sm btn-block" id="exampleInputFile">{% endcomment %}
+								<!-- <p class="help-block">Example block-level help text here.</p> -->
+							</li>
+						</div>
+						<div class="col-md-6">
+							<li><b>Usuario:</b> @{{ perfil }}</li>
+							<li><b>Nombre y Apellido:</b>
+								<input class="form-control input-sm caja-txt-form caja-txt-cfg" name="nombre" type="text" placeholder="Nombre Completo"	value="{{ nombre }}">
+							</li><br>
+							<li>¿Deseas tomarte unas vacaciones?<br>
+								<p style="text-align: center;">
+									vacas={{vacas}}
+									<label class="radio checkbox-inline" ><input type="radio" name="vacas" value="False" {% if not vacas %}checked{% endif %}>No</label>
+									<label class="radio checkbox-inline" style="margin:0"><input type="radio" name="vacas" value="True" {% if vacas %}checked{% endif %}>Si</label>
+								</p>
+							</li>
+						</div>
+					</ul>
+					<ul class="row categoria">
+						<li class="separador"></li>
+						<div class="col-md-6">
+							<li><b>Ubicacion:</b><br>
+								<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">
+									<option>Pa&iacute;s</option>
+									<option>2</option>
+								</select>
+								<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">
+									<option>Estado</option>
+									<option>2</option>
+								</select>
+								<select class="form-control formu input-sm caja-txt-form caja-txt-cfg">
+									<option>Ciudad</option>
+									<option>2</option>
+								</select>
+							</li><br>
+							<li><b>Edad:</b><input name="edad" class="form-control input-sm caja-txt-form caja-txt-cfg" type="text" placeholder="Edad" value="{{ edad }}"></li>
+							{% comment %}<li><input name="ci" class="form-control input-sm caja-txt-form caja-txt-cfg" type="text" placeholder="CI/Rif/Pasaporte"></li>{% endcomment %}
+						</div>
+						<div class="col-md-6">
+							<li><textarea name="" class="form-control form-controlado" rows="3" placeholder="Autorespuesta ante un saludo en la mensajer&iacute;a"></textarea></li>
+							<li><textarea name="" class="form-control form-controlado" rows="3" placeholder="Horario en que puedo chatear..."></textarea></li>
+							<li><button type="submit" class="btn btn-default btn-sm form-guardar pull-right">Guardar</button></li>
+						</div>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% comment %}<div class="footer"  style="position: fixed;bottom: 0;">{% endcomment %}

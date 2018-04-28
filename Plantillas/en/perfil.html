@@ -1,0 +1,149 @@
+{% load i18n %}
+{% load static from staticfiles %}
+<script type="text/javascript" charset="utf-8">
+	var lista = [[]]
+	{% for cat in lista_subcat %}
+ 		{% for subcat in cat.1 %}
+			lista[{{ forloop.parentloop.counter0 }}][{{ forloop.counter0 }}] = "<option value='{{ forloop.parentloop.counter0 }}'>{{ subcat }}</option>"
+		{% endfor %}
+		lista[{{ forloop.counter }}] = new Array()
+	{% endfor %}
+	function actualizarLista(a) {
+		var c = a.options[a.selectedIndex].value;
+		if(c!=-1){document.getElementById("id-subcateg").innerHTML = lista[c];}
+		else{document.getElementById("id-subcateg").innerHTML = '<option value="-1">Subcategories:</option>'}
+	}
+	function subcatEnviar(x){
+		document.getElementById("subc").value = x.selectedIndex;
+	}
+	function agregarInput(){
+		var n = document.getElementById("formu-serv").getElementsByTagName("input").length+1;
+		var i = document.createElement("input");
+		var s = document.createElement("span");
+		/*document.getElementById("formu-serv").children.length-3;*/
+		var f = document.getElementById("btn-inputs");
+		var m = document.getElementById("Nclausulas");
+		m.value = n-1;
+		if (s.innerText)
+			{s.innerText = n+".-"}
+		else
+			{s.textContent = n+".-"}
+		s.className = "col-md-1";
+		i.type = "text";
+		i.name = "clausula-" + (n -1);
+		i.className = "clausulas form-controlado col-md-11";
+		document.getElementById("formu-serv").insertBefore(s, f);
+		document.getElementById("formu-serv").insertBefore(i, f);
+		/*n+".-"+document.getElementById("Nclausulas").previousElementSibling.outerHTML;*/
+	}
+</script>
+<div class="cuerpo">
+	<div class="container">
+		<div class="row">
+			<div class="row fila-1">
+				<div class="col-md-3 caja-perfil caja-titulo">
+					<ul class="categoria">
+						<li class="titulo-categoria" style="background: #F7E296;color:#000">Data</li>
+						<li><img src="{% static 'images/profile.jpg' %}" width="100px" height="90px" class="imag-perfil media-object"></li>
+						<li class="nombusr">{{ perfil.nombre_completo }}</li>
+						<li class="usuario-perfil">@{{ perfil }}</li>
+						 <li class="separador"></li>
+						<li>Vacationating: {{ vacacionando }}</li>
+						<li>Average: <span class="pull-right">{{ prom }}</span></li>
+						<li>Experience: <span class="pull-right">{{ exp }}</span></li>
+						<br>
+						<li><a href="/lista-solicitudes-servicio/">Waiting List</a></li>
+						{% if perfil_propio %}
+						 	<li><a href="#" data-toggle="modal" data-target=".modal-crearservicio">Create a GeoServicios</a></li>
+						 {% endif %}
+						<li><button>To denounce</button></li>
+					</ul>
+				</div>
+				<div class="col-md-9 caja-perfil caja-titulo" style="width: auto; max-width: 729px; margin-right: 0;  min-width: 235px;">
+					<ul class="categoria">
+						<li class="titulo-categoria">Statistics</li>
+						<li><b>Average of Points:</b></li>
+						<li>General Average: <span class="pull-right">{{ prom }}</span></li>
+						<li>Client Support: <span class="pull-right">{{ atencion }}</span></li>
+						<li>Quality of results: <span class="pull-right">{{ calidad }}</span></li>
+						<li>Time of delivery: <span class="pull-right">{{ tiempo_entrega }}</span></li>
+						<br>
+						<li>Profit: <span class="pull-right">{{ ganancias }}</span></li>
+						<li>N&deg; Visits to GeoServicios: <span class="pull-right">{{ visitas }}</span></li>
+						<li>N&deg; services ofert: <span class="pull-right">{{ n_servicios }}</span></li>
+						<li>N&deg; buyers:<span class="pull-right"> {{ n_compradores }}</span></li>
+						{% comment %}<li>N&deg; servicios en progreso: <span class="pull-right">{{ n_servicios_progreso }}</span></li>
+						<li>N&deg; servicios cancelados:<span class="pull-right"> {{ n_servicios_cancelados }}</span></li>{% endcomment %}
+					</ul>
+				</div>
+			</div>
+			<div class="row fila-2">
+				<div class="col-md-12 caja-perfil caja-titulo table-responsive">
+					<table class="table categoria table-condensed table-striped">
+						<div class="titulo-categoria"  style="background: #BE2A2D;margin-bottom:0">My GeoServicios</div>
+						<thead>
+							<th class="col-md-6">Name of Service</th>
+							<th class="col-md-2">N&deg; Users on list</th>
+							<th class="col-md-2">N&deg; Sells</th>
+							<th class="col-md-2">N&deg; Cancels</th>
+						</thead>
+						<tbody>
+							{% for s in lista_servis %}
+								<tr>
+									<td class="col-md-6"><a href="/categoria/{{s.0.subcategoria.padre.url}}/{{s.0.subcategoria.url}}/{{ s.0.url }}/">{{ s.0 }}</a></td>
+									<td class="col-md-2 text-center">{{ s.1 }}</td>
+									<td class="col-md-2 text-center">{{ s.2 }}</td>
+									<td class="col-md-2 text-center">{{ s.3 }}</td>
+								</tr>
+							{% endfor %}
+							{% comment %}<li>servicios en cola (garantia restante: 1/2/3), fecha</li>{% endcomment %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% if perfil_propio %}
+	<div class="modal fade modal-crearservicio" tabindex="-2" role="dialog" aria-labelledby="CrearServicio" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">New Service</h4>
+				</div>
+				<form action="/crear-servicio/" method="post" accept-charset="utf-8">
+					{% csrf_token %}
+					<div class="modal-body row">
+						<select onchange="actualizarLista(this)" class="col-md-6">
+							<option value="-1">Categories:</option>
+							{% for cat in categorias %}
+							 	<option value="{{ forloop.counter0 }}">{{ cat }}</option>
+							{% endfor %}
+						</select>
+						<select onchange="subcatEnviar(this)"  class="col-md-6" size="1" id="id-subcateg" name="subcategoria">
+							<option value="-1">Subcategories:</option>
+						</select>
+						<br><br>
+						<input type="text" class="form-control form-controlado" placeholder="Nombre del servicio" name="nomb">
+						<input type="hidden" id="subc" name="subc" value="0">
+						<input type="text" class="form-control form-controlado" placeholder="Precio" name="precio">
+						<textarea class="form-control form-controlado" rows="3" name="descrip" placeholder="Description..."></textarea>
+						<br>
+						<p id="formu-serv">
+							<b>Clausulas del Contrato:</b><br>
+							<span class="col-md-1">1.-</span>
+							<input type="text" name="clausula-0" class="clausulas form-controlado col-md-11">
+							<a href="#" id="btn-inputs" onclick="agregarInput()" class="btn btn-default">+</a>
+						</p>
+						<input type="hidden" id="Nclausulas" name="Nclausulas" value="">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endif %}

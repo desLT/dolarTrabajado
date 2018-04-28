@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+			"path": "/C/Users/iLaptop/xampp/htdocs/Django/mprendedores"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"Proy Sociedades en PYTHON-ANYWHERE"
+			],
+			"path": "/C/Users/iLaptop/xampp/htdocs/Django/MiEmpresa2"
+		},
+		{
+			"path": "/C/Users/iLaptop/xampp/htdocs/Django/MiEmpresa - TERMINADA SIN GAE"
+		},
+		{
+			"path": "/C/Users/iLaptop/xampp/htdocs/Django/clon-de-twitter-django-3.0"
+		},
+		{
+			"path": "/C/Users/iLaptop/xampp/htdocs/Django/gserv"
+		}
+	]
+}

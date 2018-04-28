@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+	<div class="cuerpo">
+		<div class="container">
+			<h2>Resultados de "<i><b>{{ consulta }}</b></i>"</h2>
+			<div class="row">
+				<p>{{ lista_usuarios|length }} usuarios(s)</p>
+				{% for usr in lista_usuarios %}
+					<a href="/perfil/{{ usr }}/" class="busqueda">
+						<i class="glyphicon glyphicon-user"></i>  @{{ usr }}
+					</a>
+				{% endfor %}
+				<br><br>
+				<p>{{ lista_servicios|length }} servicio(s)</p>
+				{% for serv in lista_servicios %}
+					<div class="col-md-3 caja-serv">
+						<div class="cara-secundaria">
+							<p class="usuario"><a href="/perfil/{{ serv.usuario }}/"><i class="glyphicon glyphicon-user"></i>  @{{ serv.usuario }}</a></p>
+							<a class="enlace-serv" href="/categoria/{{ serv.subcategoria.padre.url }}/{{ serv.subcategoria.url }}/{{ serv.url }}/">
+								<p class="datos-extra">
+									<span class="titulo-extras">Promedio:</span><span><i class="glyphicon glyphicon-star color-oro"></i> +199k / +199k</span>
+									<span class="titulo-extras">Experiencia:</span><span><i class="glyphicon glyphicon-bookmark color-oro"></i> +99k</span>
+									<span class="vermas"><i class="glyphicon glyphicon-chevron-right" style=""></i></span>
+								</p>
+							</a>
+						</div>
+					 	<div class="cara-principal">
+							<img src="{{ STATIC_URL }}images/profile.jpg" width="215" height="130" alt="">
+					 		<!-- <img data-src="holder.js/300x200" alt="..."> -->
+						 	<div class="dir-serv">
+								<div class="row">
+									<h2 class="col-xs-9 nomb-serv">{{ serv }}</h2>
+									<div class="col-xs-3 text-center precio"><div>Bs</div>{{ serv.precio }}</div>
+								</div>
+					      		</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="footer"  style="position: fixed; bottom:0; margin-top: 50px;">
+{% endblock  %}

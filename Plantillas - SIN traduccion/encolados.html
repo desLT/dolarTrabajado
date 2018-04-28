@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block cuerpo %}
+	<script type="text/javascript" charset="utf-8">
+		function enviar(w) {
+			w[1].value = 1;
+			return true;
+		}
+	</script>
+	<div class="cuerpo">
+		<div class="container">
+			<div class="col-md-5 caja-contacto" style="float:none;margin:0 auto;">
+				<div class="titulo-categoria"  style="background: #BE2A2D;">Servicios en Espera</div>
+				{% if lista %}
+					{% for s in lista %}
+						<form action="/lista-solicitudes-servicio/" class="col-md-12" onsubmit="return enviar(this);" method="post" accept-charset="utf-8">
+							{% csrf_token %}
+							<span style="font-size:1.2em">{{ s.0.servicio }}</span>
+							<small class="pull-right"><b>Solicitante:</b> <a href="/perfil/{{ s.0.comprador }}/">@{{ s.0.comprador }}</a></small>
+							<small>{{ s.0.fecha|timesince }}</small>
+							<div style="margin: 0 20px">
+								{% for n in s.1 %}
+									<small class="clausula"><b>{{ forloop.counter }}.-</b> {{ n }}</small><br>
+								{% endfor %}
+							</div>
+							<input type="hidden" name="opc" value="0">
+							<input type="hidden" name="ident" value="{{ s.0.id }}">
+							<button type="submit" name="aceptar" class="btn btn-success pull-right">Aceptar</button>
+							<button type="submit" name="rechazar" class="btn btn-danger pull-right">Rechazar</button>
+						</form>
+						<br>
+						<hr>
+					{% endfor %}
+				{% else %}
+					<p class="text-center"><br>Sin solicitudes por ahora...</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div class="footer">
+{% endblock cuerpo %}

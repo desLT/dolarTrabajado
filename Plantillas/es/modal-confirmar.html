@@ -1,0 +1,20 @@
+<div class="modal fade modal-confirmar" tabindex="-1" role="dialog" aria-labelledby="Confirmar" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">¿Confirma Borrar su cuenta?</h4>
+			</div>
+			<form action="/borrar-cta/" method="post" accept-charset="utf-8">
+				{% csrf_token %}
+				<div class="modal-body">
+					<p>Tenga en cuenta que esta acci&oacute;n <b><em>NO</em></b> es irreversible. {% comment %}Le hecharan de menos sus XXX clientes atendidos :({% endcomment %}</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Me quedo</button>
+					<button type="submit" class="btn btn-danger">Borrar Definitivamente</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
